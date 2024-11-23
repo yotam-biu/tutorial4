@@ -18,10 +18,11 @@ The project is divided into the following steps:
 ### Step 1: Implementing the `find_all_starts` Function
 This function scans a DNA sequence and identifies all starting positions of the `ATG` codon.
 
-- **Input**: A DNA sequence string (e.g., `"ATGCGTATGACG..."`).
-- **Output**: A list of integers representing the indices of all `ATG` codons. If no `ATG` codons are found, an empty list is returned.
+### Step 2: Implementing the `find_first_in_register_stop` Function
+You will write a function called find_first_in_register_stop that scans a DNA sequence and identifies the first occurrence of a stop codon (`TGA`, `TAG`, or `TAA`) in the register (every 3 nucleotides). If the stop codon is not found, the function will return -1.
 
-#### Example:
-```python
-find_all_starts("ATGCGTATGACG")
-# Output: [0, 6]
+### Step 3: Implementing the `all_orfs_range` Function
+You will implement a function called all_orfs_range that scans a DNA sequence and identifies all open reading frames (ORFs) by finding the start codons (`ATG`) and the corresponding stop codons (`TGA`, `TAG`, `TAA`), and returns the range of each ORF.
+
+### Step 4: Implementing the `longest_orf` Function
+You will implement a function called longest_orf that scans a DNA sequence, finds all open reading frames (ORFs), and returns the longest ORF from the sequence.
